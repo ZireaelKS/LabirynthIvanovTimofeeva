@@ -14,7 +14,7 @@ namespace LabirynthIvanovTimofeeva
         {
             int count;
 
-            using (StreamReader streamReader = File.OpenText("../../large-test.in.txt"))
+            using (StreamReader streamReader = File.OpenText("C:/Users/Acer/OneDrive/Рабочий стол/Labirynth-master/small-test.txt"))
             {
                 count = Convert.ToInt32(streamReader.ReadLine());
                 for (int i = 0; i < count; i++)
@@ -344,7 +344,7 @@ namespace LabirynthIvanovTimofeeva
 
         static void WriteToTxt(string str)
         {
-            using FileStream file = new FileStream("../../Answer.txt", FileMode.Append);
+            using FileStream file = new FileStream("../../Answer2.txt", FileMode.Append);
             using StreamWriter stream = new StreamWriter(file);
             stream.WriteLine(str);
         }
